@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<body>
+    <div style="margin: 20px;">
+      H264:
+        <input type="file" onchange="handleVideoFiles(this.files)" onclick="setDecoder(0)">
+    </div>
+    <div style="margin: 20px;">
+      H265:
+        <input type="file" onchange="handleVideoFiles(this.files)" onclick="setDecoder(1)">
+    </div>
+    <div style="margin: 20px;">
+      AudioContext:
+        <input type="file" onchange="handleAudioFiles(this.files)" onclick="setAudioDecoder(0)">
+    </div>
+    <div style="margin: 20px;">
+      MSE:
+        <input type="file" onchange="handleAudioFiles(this.files)" onclick="setAudioDecoder(1)">
+    </div>
+    <div style="margin: 20px;">
+      <button id="play" onclick="playAudio()">Start Play</button>
+    </div>
+    <div style="margin: 20px;">
+      <button id="play" onclick="fastForword()">FastForword</button>
+    </div>
+
+  <div style="margin-top: 10px">
+    <canvas id="playCanvas"></canvas>
+  </div>
+
+  <script src="../dist/libffmpeg_264_265.js"></script>
+  <script src="video.js"></script>
+  <script src="audio.js"></script>
+  <script src="webgl.js"></script>
+
+</body>
+</html>

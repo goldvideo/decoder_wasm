@@ -1,0 +1,14 @@
+prefix=/data/gitlab/ffmpeg/../decoder_wasm/dist
+exec_prefix=${prefix}
+libdir=/data/gitlab/ffmpeg/../decoder_wasm/dist/lib
+includedir=/data/gitlab/ffmpeg/../decoder_wasm/dist/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.35.100
+Requires: libavutil >= 56.22.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
