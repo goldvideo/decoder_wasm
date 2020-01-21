@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/goldvideo/decoder_wasm.git"
   },
-  "author": "xuluying@qiyi.com",
+  "author": "xuluying",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
