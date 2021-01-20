@@ -65,7 +65,9 @@ var ret = Module._openDecoder(codecType, videoCallback, LOG_LEVEL_WASM)
 # 4 编译
 ## 4.1 安装Wasm工具链Emscripten
 安装步骤可参考其[官方文档](https://emscripten.org/docs/getting_started/downloads.html)，目前支持 Windows, MacOS, Linux。
+
 建议版本：1.38.45， 编译运行都没问题。
+
 ## 4.2 下载FFmpeg
 ```bash
 mkdir goldvideo
